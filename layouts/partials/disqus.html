@@ -1,0 +1,27 @@
+
+<div class="disqus-comment">
+        <div class="disqus-button has-background-grey-dark" id="load_disqus" onclick="load_disqus()">
+          <span class="icon"><i class="fas fa-comment-alt"></i>&nbsp;comment</span>
+        </div>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+         
+          function load_disqus() {
+            
+            
+            if (window.location.hostname === 'localhost') return;
+      
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            var disqus_shortname = 'linuxisekai-github-io';
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      
+            $('#load_disqus').remove();
+          };
+        </script>
+        <noscript>Please enable JavaScript to view the
+          <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+        
+        </div>
+        

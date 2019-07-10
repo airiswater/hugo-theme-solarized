@@ -1,0 +1,19 @@
+title = "Hugo solarized"
+baseurl = "/"
+description = "based on bulma"
+googleAnalytics = "yor google analytics" 
+DisqusShortname = "you disqus shot name"
+canonifyURLs = true 
+
+enableRobotsTXT = true
+
+# to apply theme
+themesDir = "themes"
+theme = "hugo-solarized"
+
+# Biodata Author
+[author]
+    name = "tempegoreng"
+    homepage = "/"
+    bio = "~ stay goblok"
+    image = "/img/profil.jpg"

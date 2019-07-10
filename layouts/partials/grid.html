@@ -1,0 +1,57 @@
+<section class="section projects">
+  <div class="container">
+
+  <div class="project-grid">
+  <div class="columns is-multiline is-mobile">
+  {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 6 }}
+  {{ range $paginator.Pages }}         
+  <div class="column is-12-mobile is-half-tablet is-one-third-desktop"> 
+  <div class="card">
+    <div class="card-image">    
+  <figure class="image is-5by3">
+    <img class="project-thumb lazyload"  data-src="{{ with .Params.image }}{{ . }}{{ end }}" alt="" />
+  <figcaption class="figcaption">
+  <a class="button is-primary is-outlined is-rounded" href="{{ .RelPermalink }}">
+  <span>Read..</span>
+  <span class="icon">
+  <i class="fas fa-angle-right"></i>
+  </span></a>
+  </figcaption>
+  <div class="overlay">
+  </figure>
+  </div>
+  <div class="has-background-grey-dark e">
+  <a href="{{ .RelPermalink }}" class="judul-post">
+  <span class="icon">
+  <i class="fas has-text-primary fa-book"></i>             
+  </span>
+  {{ .Title }}
+  </a>
+  <br/>
+
+  <time class="f"><span class="icon"><i class="fas fa-calendar has-text-primary"></i></span>&nbsp;{{ .Date.Format "02-01-2006" }}
+  | <span class="icon is-small"><i class="fas fa-tags has-text-primary"></i></span></time>
+  {{ $taxonomy := "tags" }}
+  {{ with .Param $taxonomy }}
+  {{ range $index, $tag := . }}
+  <time class="f">
+  {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+  {{ $tag | urlize }}
+  </time>
+  
+  {{- end -}}
+  {{- end -}}
+  {{ end }}
+</div>
+</div>
+
+</div>
+{{ end }}
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+      
