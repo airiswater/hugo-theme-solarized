@@ -6,8 +6,12 @@
 {{ range .Site.Pages }}
 {{ $isMatchTags := intersect $tags .Params.tags | len | lt 1 }}
 {{ if and $isMatchTags (ne .Permalink $currentPagePermalink) }}
-        <h3>Related Post</h3>
-  <a href="{{ .Permalink }}">{{ .Title }}</a>
+<div class="container">
+    <a href="{{ .Permalink }}" class="judul-post">
+        <img src="/img/related.svg" width="16">&nbsp;{{ .Title }}</a>
+<br/>
+
+                
   {{ $.Scratch.Add "count" 1 }}
 {{ end }}
 {{ end }}
@@ -16,19 +20,42 @@
 <div class="has-text-danger"><b>Tetap semangat ngoding 👊</b></div>
 <br/>-->
 {{ if eq ($.Scratch.Get "count") 0 }}
-<h3>
+<br/>
+<br/>
+<br/>
+<div class="is-size-4 has-addons">
     Related Post
-</h3>
-  {{ $.Scratch.Set "limit" 0 }}
-  {{/* range (where .Site.Pages "Section" "tutorials") */}}
-  {{ range .Site.Pages }}
-  {{ $isMatchTags := intersect $tags .Params.tags | len | lt 0 }}
-  {{ if and $isMatchTags (ne .Permalink $currentPagePermalink) (lt ($.Scratch.Get "limit") 5) }}
-    {{ $.Scratch.Add "limit" 1 }}
-    <a href="{{ .Permalink }}" >
-        <span class="icon is-medium"><i class="fas fa-book-open"></i></span>{{ .Title }}</a>
-        <br/>
+</div>
+  
+    
+
+        
+            {{ $.Scratch.Set "limit" 0 }}
+            {{/* range (where .Site.Pages "Section" "tutorials") */}}
+            {{ range .Site.Pages }}
+            {{ $isMatchTags := intersect $tags .Params.tags | len | lt 0 }}
+            {{ if and $isMatchTags (ne .Permalink $currentPagePermalink) (lt ($.Scratch.Get "limit") 5) }}
+              {{ $.Scratch.Add "limit" 1 }}
+         
+            
+              <div class="tile is-parent has-background-grey-dark">
+                  <a href="{{ .Permalink }}">
+                   
+                      <i class="fas fa-newspaper"></i>&nbsp;{{ .Title }}</a>
+              
+              <br/>
+              
+              </div>
+            
+              
+      
+                         
+                          
+                          
   {{ end }}
   {{ end }}
 {{ end }}
+</div>
+    
+
 <div class="ghost-padding"></div>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    {{ partial "head.html" . }}
+    <body>
+    {{ partial "navbar.html" . }}
+    <div class="judul"><b>{{ .Title }}</b></div>
+    
+ <div class="content">
+ <article class="article">
+{{ .Content }}
+</article>
+</div>
+    {{ partial "footer.html" . }}
+    {{ partial "js-init.html" . }}
+    </body>
+</html>

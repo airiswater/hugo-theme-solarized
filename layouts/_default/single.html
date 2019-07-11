@@ -2,8 +2,7 @@
 <html>
     {{ partial "head.html" . }}
     <body>
-            <script src="/js/highlight.pack.js"></script>
-            <script>hljs.initHighlightingOnLoad();</script>
+    
     {{ partial "navbar.html" . }}
     <div class="judul"><b>{{ .Title }}</b></div>
     <div class="is-size-7 info-post">
@@ -36,5 +35,7 @@
        </div>
     {{ partial "footer.html" . }}
     {{ partial "js-init.html" . }}
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/highlight.pack.js"></script>
     </body>
 </html>
