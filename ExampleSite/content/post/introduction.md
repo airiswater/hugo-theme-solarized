@@ -2,7 +2,7 @@
 title: "Introduction: Hugo theme solarized"
 date: 2019-07-07T12:45:33+07:00
 draft: false
-image: /img/nishimiya1.webp
+image: /img/code.jpg
 description: introduction
 tags: ["introduction","hugo"]
 ---

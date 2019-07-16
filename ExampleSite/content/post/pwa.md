@@ -1,3 +1,11 @@
+---
+title: "Install service worker"
+date: 2019-07-17T03:43:37+07:00
+draft: false
+image: /img/tool.webp
+tags: ["pwa"]
+---
+
 ## Introduction
 
 hugo theme solarized based on bulma. <a href="https://linuxisekai.site">Demo</a>
@@ -13,7 +21,6 @@ hugo theme solarized based on bulma. <a href="https://linuxisekai.site">Demo</a>
 <li>masonryJS</li>
 <li>Include with service worker</li>
 <li>Font awesome 5.9.0</li>
-<li>HighlightJS</li>
 </ul>
 
 ## Intallation
@@ -184,3 +191,4 @@ please see the folder ExampleSite to get example configuration
 preview for this this theme ? https://linuxisekai.site
 
 ##### I hope You are happy and enojoy for my this work 😇
+

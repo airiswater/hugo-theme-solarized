@@ -3,7 +3,7 @@ title: "how to convert image to Webp format on linux"
 date: 2019-07-07T12:36:46+07:00
 draft: false
 tags: ["linux", "tutorial","hugo"]
-image: /img/loli.webp
+image: /img/term.png
 ---
 
 this is simple tutorial to convert image to .webp format
