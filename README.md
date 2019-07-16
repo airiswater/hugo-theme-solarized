@@ -2,12 +2,15 @@
 
 hugo theme solarized based on bulma
 
+<img src="/images/screenshoot.png">
+
 ## Intallation
+i am sorry my english is very bad
 
-    hugo@solarized :~$ git clone https://github.com/linuxisekai/hugo-theme-solarized.git
-    hugo@solarized :~$ cp -rf hugo-theme-solarized ~/hugo-project/themes
+    $ git clone https://github.com/linuxisekai/hugo-theme-solarized.git
+    $ cp -rf hugo-theme-solarized ~/hugo-project/themes
 
-<code>config.toml</code>
+#### config.toml
 
     themesDir = "themes"
     theme = "hugo-solarized"
@@ -16,11 +19,10 @@ hugo theme solarized based on bulma
 
 #### move gulpfile.js to root directory hugo
 
-example :
     mv ~/hugo-project/theme/hugo-solarized/gulpfile.js ~/hugo-project/gulpfile.js
 
 #### Install workbox and gulp
-make sure you have install npm
+make sure you have install npm, run this command in your hugo root directory
 
     $ npm init -y
     $ npm install gulp --save-dev
@@ -76,7 +78,7 @@ make <code>maifest.json</code> on static folder
 
 make sure favicon name and path is same
 
-#### run buld task
+#### run build task
 
 open the vscode and <code><i>ctrl+shift+p</i> => <i>Task : Run task</i> => <i>gulp : build </i> => <i>continue without scanning the task output</i></code>
 
