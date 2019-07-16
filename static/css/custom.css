@@ -23,10 +23,12 @@ h1 {
     margin-top:2em; 
 }
 .info-post {
-    margin:1rem;
-    border-bottom: 2px solid #ACB6B7;
-    padding-bottom: 0.5rem;
-    text-align: center;
+  margin-bottom: 3rem;
+  border-bottom: 0.2rem solid ;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  margin-left:-0.1em;
+  margin-right: -0.1rem;
 }
 .content {
     margin-top: 1rem;
@@ -57,9 +59,80 @@ h1 {
 }
 /* end mobile screen */
 
+/* tablet */
+@media only screen and (max-width: 1023px) and (min-width: 768px) { 
+  h1.header-judul{
+    margin-top: 3rem;
+    font-size: 300%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    }
+.judul {
+    margin-top: 8rem;
+    font-size: 200%;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    text-align: center;
+}
+.content-lay {
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-left: 13rem;
+  margin-right: 13rem;
+}
+
+.content h3{
+    
+    margin-top:2em; 
+}
+.info-post {
+    margin-bottom: 3rem;
+    border-bottom: 0.2rem solid ;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    margin-left: -2rem;
+    margin-right: -2rem;
+}
+.content {
+    margin-top: 1rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+h1 {
+    padding-top: 5rem;
+    padding-bottom: 0rem;
+    
+}   
+.button-post {
+    padding: 2rem;
+    border-color: #073642;
+}
+.button.button-next {
+    margin-left: 15rem;
+    border-color: #073642;
+}
+.button-prev {
+  margin-right: 15rem;
+  border-color: #073642;
+}
+.content-img {
+align-items: center;
+border-radius: 5px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 600px;
+height: 320px;
+} 
+}
+
+/* end tablet */
+
 /* laptop scren */
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     h1.header-judul{
         margin-top: 3rem;
         font-size: 300%;
@@ -70,10 +143,16 @@ h1 {
     .judul {
         margin-top: 8rem;
         font-size: 200%;
-        margin-left: 12rem;
-        margin-right: 12rem;
+        margin-left: -2rem;
+        margin-right: -2rem;
         text-align: center;
     }
+    .content-lay {
+      border-radius: 10px;
+      margin-top: 1rem;
+      margin-left: 13rem;
+      margin-right: 13rem;
+  }
     
     .content h3{
         
@@ -81,17 +160,18 @@ h1 {
     }
     .info-post {
         margin-bottom: 3rem;
-        border-bottom: 2px solid ;
+        border-bottom: 0.2rem solid ;
         padding-bottom: 0.5rem;
         text-align: center;
-        margin-left: 12rem;
-        margin-right: 12rem;
+        margin-left: -2rem;
+        margin-right: -2rem;
     }
     .content {
         margin-top: 1rem;
-        margin-left: 17rem;
-        margin-right: 17rem;
+        margin-left: 14rem;
+        margin-right: 14rem;
     }
+  
     h1 {
         padding-top: 5rem;
         padding-bottom: 0rem;
@@ -149,11 +229,13 @@ h1 {
     word-break: break-all;
   }
   .judul-post {
-      padding: 1rem;
-      font-size: 1.12rem;
+      font-size: 1.19rem; 
+  }
+  .h{
+    padding:1rem;
   }
   .f {
-      font-size: 0.8rem;
+      font-size: 1rem;
   }
   .message-body {
       font-family: 'Ubuntu Mono', monospace;
@@ -218,10 +300,11 @@ h1 {
 .btn-counter:after{
     content:attr(data-count);
 }
-
+/*
 .pageloader{position:fixed;top:0;right:0;bottom:0;left:0;background-color:#002B36;z-index:999998;transition:-webkit-transform 0.35s ease-out;transition:transform 0.35s ease-out;transition:transform 0.35s ease-out, -webkit-transform 0.35s ease-out;-webkit-transform:translateY(-100%);transform:translateY(-100%);will-change:transform}.pageloader.is-active{-webkit-transform:translateY(0);transform:translateY(0)}.pageloader::after,.pageloader::before{position:absolute;top:50%;left:50%;display:block;border-radius:100%;content:"";z-index:999999}.pageloader::after{margin-top:-100px;margin-left:-100px;width:200px;height:200px;background-color:#2AA198;border:3px solid rgb(255, 244, 244);-webkit-animation:page-loader-inner 1.5s infinite ease-out;animation:page-loader-inner 1.5s infinite ease-out}.pageloader::before{margin-top:-30px;margin-left:-30px;width:60px;height:60px;background-color:#2AA198;-webkit-animation:page-loader-outer 1.5s infinite ease-in;animation:page-loader-outer 1.5s infinite ease-in}@-webkit-keyframes page-loader-inner{0%,40%{-webkit-transform:scale(0);transform:scale(0)}100%{-webkit-transform:scale(1);transform:scale(1);opacity:0}}@keyframes page-loader-inner{0%,40%{-webkit-transform:scale(0);transform:scale(0)}100%{-webkit-transform:scale(1);transform:scale(1);opacity:0}}@-webkit-keyframes page-loader-outer{0%{-webkit-transform:scale(1);transform:scale(1)}100%,40%{-webkit-transform:scale(0);transform:scale(0);opacity:0}}@keyframes page-loader-outer{0%{-webkit-transform:scale(1);transform:scale(1)}100%,40%{-webkit-transform:scale(0);transform:scale(0);opacity:0}}.infraloader{position:fixed;top:0;right:0;bottom:0;left:0;background-color:#002B36;z-index:-1;opacity:0;transition:opacity .35s}.infraloader.is-active{opacity:1.0;z-index:999997}
-
-html {scroll-behavior:smooth;}
+*/
+/*
+html {scroll-behavior:smooth;} */
 .ignielToTop {width:40px; height:40px; position:fixed; bottom:10px; right: 10px; z-index:99; cursor:pointer; border-radius:100px; transition:all .5s; background:#2AA198 url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;}
 .ignielToTop:hover {background:#2AA198 url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;}
 /*# sourceMappingURL=bulmaswatch.min.css.map */
@@ -246,22 +329,22 @@ html {scroll-behavior:smooth;}
 /* box masonry style */
 
   .masonry-wrapper {
-    padding: 1.5em;
+    padding: 1em;
     max-width: 1024px;
     margin-right: auto;
     margin-left: auto;
   }
   .masonry {
     columns: 1;
-    column-gap: 10px;
+    column-gap: 20px;
   }
   .masonry-item {
     display: inline-block;
     vertical-align: top;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   @media only screen and (max-width: 1023px) and (min-width: 768px) {  .masonry {
-      columns: 2;
+      columns: 3;
     }
   }
   @media only screen and (min-width: 1024px) {
@@ -274,11 +357,10 @@ html {scroll-behavior:smooth;}
     overflow: hidden;
   }
   .masonry-item {
-    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, .3));
-    transition: filter .25s ease-in-out;
+    filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, .1));
   }
   .masonry-item:hover {
-    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .3));
+    filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, .6));
   }
   .masonry-content .judul-post {
     overflow: hidden;
@@ -291,8 +373,11 @@ html {scroll-behavior:smooth;}
   }
   .masonry-title {
     font-weight: 700;
-    font-size: 1.4rem;
-    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+  .masonry-info{
+    font-size: 0.8rem;
   }
   .masonry-description {
     padding: 0rem 1rem 1rem;
@@ -302,8 +387,6 @@ html {scroll-behavior:smooth;}
   .masonry-footer {
     font-size: 1rem;
     text-align: center;
-    background-color: #073642;
-    
     border-radius: 10px;
     padding-top: 2em;
     padding-bottom: 2em;
@@ -311,4 +394,24 @@ html {scroll-behavior:smooth;}
     transition: opacity 1s ease-in-out;
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, .3));
     transition: filter .25s ease-in-out;
+  }
+
+  /** end masonry **/
+
+  .feather{
+    height: 1.4em;
+    width: 1.4em;
+  }
+  .no-border {
+    border: 1px;
+    border-style: solid;
+    border-color: #002B36;
+    border-left-color: #2AA198;
+    border-left-width: 0.2rem;
+    border-radius: 6px;
+    margin:-4px;
+    padding: 1rem;
+  }
+  pre {
+    border: 2px solid #839496;
   }

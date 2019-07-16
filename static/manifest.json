@@ -1,0 +1,32 @@
+{
+    "name": "Nolep Enthusisat.",
+    "short_name": "Linuxisekai.",
+    "icons": [
+      {
+      "src": "/img/icons/favicon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "/img/icons/favicon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "/img/icons/favicon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },{
+      "src": "/img/icons/favicon-196x196.png",
+      "sizes": "196x196",
+      "type": "image/png"
+    },{
+      "src": "/img/icons/favicon-310x310.png",
+      "sizes": "310x310",
+      "type": "image/png"
+    }
+  ],
+    "display": "standalone",
+    "orientation" : "portrait",
+    "background_color": "#002B36",
+    "theme_color": "#073642",
+    "start_url": "/"
+  }

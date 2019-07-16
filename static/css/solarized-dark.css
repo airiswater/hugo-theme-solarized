@@ -7,9 +7,7 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .hljs {
   display: block;
   overflow-x: auto;
-  padding: 0em;
-  padding-top: 0;
-  margin-top: 0;
+  padding: 1em;
   background: #073642;
   color: #839496;
 }

@@ -6,9 +6,6 @@ tags: ["linux", "tutorial","hugo"]
 image: /img/loli.webp
 ---
 
-<img src="/img/loli.webp" class="content-img">
-
-
 this is simple tutorial to convert image to .webp format
 
     #debian

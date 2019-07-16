@@ -2,11 +2,11 @@
 title: "Introduction: Hugo theme solarized"
 date: 2019-07-07T12:45:33+07:00
 draft: false
-image: /img/nishimiya.webp
+image: /img/nishimiya1.webp
 description: introduction
 tags: ["introduction","hugo"]
 ---
-<img src="/img/nishimiya.webp" class="content-img">
+
 ### Introduction
 
 hugo theme solarized is hugo theme based on buma for CSS framework, visit my site https://linuxisekai.site

@@ -7,8 +7,10 @@
 {{ $isMatchTags := intersect $tags .Params.tags | len | lt 1 }}
 {{ if and $isMatchTags (ne .Permalink $currentPagePermalink) }}
 <div class="container">
-    <a href="{{ .Permalink }}" class="judul-post">
-        <img src="/img/related.svg" width="16">&nbsp;{{ .Title }}</a>
+    <div class="no-border has-background-grey-dark">
+    <a href="{{ .Permalink }}" class="has-text-grey">
+        {{ .Title }}</a>
+        </div>
 <br/>
 
                 
@@ -23,9 +25,6 @@
 <br/>
 <br/>
 <br/>
-<div class="is-size-4 has-addons">
-    Related Post
-</div>
   
     
 
@@ -34,28 +33,26 @@
             {{/* range (where .Site.Pages "Section" "tutorials") */}}
             {{ range .Site.Pages }}
             {{ $isMatchTags := intersect $tags .Params.tags | len | lt 0 }}
-            {{ if and $isMatchTags (ne .Permalink $currentPagePermalink) (lt ($.Scratch.Get "limit") 5) }}
+            {{ if and $isMatchTags (ne .Permalink $currentPagePermalink) (lt ($.Scratch.Get "limit") 3) }}
+            <div class="no-border">
               {{ $.Scratch.Add "limit" 1 }}
          
             
-              <div class="tile is-parent has-background-grey-dark">
+              
                   <a href="{{ .Permalink }}">
-                   
-                      <i class="fas fa-newspaper"></i>&nbsp;{{ .Title }}</a>
-              
-              <br/>
-              
+                      {{ .Title }}</a>
               </div>
-            
-              
+             
       
                          
                           
                           
   {{ end }}
+  
   {{ end }}
-{{ end }}
 </div>
+{{ end }}
+
     
 
 <div class="ghost-padding"></div>

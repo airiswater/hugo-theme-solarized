@@ -3,44 +3,47 @@
   {{ partial "head.html" . }}
   <body>
     {{ partial "navbar.html" . }}
+    {{ partial "header.html" . }}
 
-
-    <section class="section container projects">
-        <h1 class="is-size-1 has-text-centered"><b>Linuxisekai</b></h1>
-        <h2 class="subtitle is-size-5 has-text-centered">Nolep Enthusiast Project</h2>
-        <div class="project-grid">
-        <div class="columns is-multiline is-mobile">
+    <div class="container">
+      <div class="masonry-wrapper">
+        <div class="masonry">
                             {{ range .Data.Pages }}
                        
-                      <div class="column is-12-mobile is-half-tablet is-one-third-desktop"> 
-                          <div class="box">    
-                        <figure class="image"><img class="project-thumb" src="{{ with .Params.image }}{{ . }}{{ end }}" alt="" />
-                          <figcaption class="figcaption">
-                            <a class="button is-primary is-outlined is-rounded" href="{{ .RelPermalink }}">
-                              <span>Read..</span>
-                              <span class="icon">
-                                <i class="fas fa-angle-right"></i>
-                              </span></a>
-                            </figcaption>
-                          <div class="overlay">
-                        </figure>
-                        <br>
-                        
-                        <a href="{{ .RelPermalink }}" class="judul-post">
-                        <span class="icon">
-                          <i class="fas fa-book"></i>             
-                      </span>
-                      &nbsp;{{ .Title }}
-                        </a>
-                        </div>
-                        </div>
-                        {{ end }}
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                        </section>
-    {{ partial "footer.html" . }}
+                            <div class="masonry-item">
+                              <div class="masonry-content">
+                                <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" sizes="20em">
+                                <div class="h">
+                                <div class="judul-post">
+                                    <a href="{{ .RelPermalink }}">
+                                            
+                                  {{ .Title }}
+                                  </a>
+                                <br/>
+                                </div>
+                                  
+                                  <i data-feather="calendar"  class="is-size-7 has-text-primary"></i>
+                                  {{ .PublishDate.Format "January 2, 2006" }}
+                                     <i data-feather="edit-3" class="is-size-7 has-text-primary"></i>
+                                      {{ $taxonomy := "tags" }}
+                                      {{ with .Param $taxonomy }}
+                                      {{ range $index, $tag := . }}
+                                      
+                                      {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+                                      {{ $tag | urlize }}
+                                      {{- end -}}
+                                      {{- end -}}
+                                      {{ end }}
+                                      
+                                      </div>
+                                  </div>
+                                </div>
+                                {{ end }}
+                                </div>
+                                </div>
+                                </div>
+    {{ partial "pagination.html" . }}
+    {{ partial "info.html" . }}
     {{ partial "js-init.html" . }}
   </body>
 </html>

@@ -1,11 +1,5 @@
 ---
 draft: true
-date: {{ .Date }}
+date: {{ dateFormat .Date "Monday, Jan 2, 2006" "2015-01-21" }}
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
-slug: {{ .BaseFileName }}
-tags:
-categories:
-            -tuorial
-image: https://lorempixel.com/720/380
-thumbnail: https://lorempixel.com/320/160
 ---

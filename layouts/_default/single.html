@@ -4,20 +4,27 @@
     <body>
     
     {{ partial "navbar.html" . }}
-    <div class="judul"><b>{{ .Title }}</b></div>
-    <div class="is-size-7 info-post">
-    <span class="icon has-text-primary"><i class="fas fa-user"></i></span>
-    {{ .Site.Author.name }} | 
-    <span class="icon has-text-primary"><i class="fas fa-calendar"></i></span> 
-    {{ .Date.Format "02-01-2006" }}
-    </div>
+                
+    
  <div class="content">
+
+        <div class="judul">
+                <b>
+                {{ .Title }}</b>
+            </div>
+            <div class="info-post">
+                    <i class="fas fa-calendar-alt is-size-7 has-text-primary"></i>
+                    {{ .PublishDate.Format "January 2, 2006" }}
+                      || <span class="icon has-text-primary"><i class="fas fa-user"></i></span>
+                      {{ .Site.Author.name }}
+            </div>
+            
  <article class="article">
-{{ .Content }}
-</article>
-<br/>
-<br/>
-<span class="icon has-text-primary"><i class="fas fa-tags"></i></span>
+    {{ .Content }}
+
+    <br/>
+    <br/>
+    <div class="is-uppercase">
 {{ $taxonomy := "tags" }}
 {{ with .Param $taxonomy }}
 {{ range $index, $tag := . }}
@@ -26,16 +33,16 @@
 {{- end -}}
 {{- end -}}
 
-{{ end }}                          
-<br>
+{{ end }}    
+    </div>
     {{ partial "button-post.html" . }}
     {{ partial "disqus.html" . }}
     {{ partial "related.html" . }}
-       </div>
-       </div>
+</article>
+</div>
     {{ partial "footer.html" . }}
     {{ partial "js-init.html" . }}
-    <script>hljs.initHighlightingOnLoad();</script>
     <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     </body>
 </html>

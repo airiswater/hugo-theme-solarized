@@ -1,7 +1,7 @@
 /*! bulmaswatch v0.7.2 | MIT License */
 /*! bulma.io v0.7.2 | MIT License | github.com/jgthms/bulma */
 
-@import url(https://fonts.googleapis.com/css?family=PT+Sans|Ubuntu+Mono|Inconsolata|Mali:400,700,400italic);
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono&display=swao');
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -243,7 +243,7 @@ th {
 
 html {
   background-color: #002B36;
-  font-size: 15px;
+  font-size: 1rem;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-width: 300px;
@@ -266,7 +266,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "PT Sans" sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: "Ubuntu", sans-serif; }
 
 code,
 pre {
@@ -328,7 +328,7 @@ pre {
   color: #839496;
   font-size: 0.875em;
   overflow-x: auto;
-  padding: 1.25rem 1.5rem;
+  padding:0;
   white-space: pre;
   word-wrap: normal; }
   pre code {
@@ -1961,7 +1961,6 @@ a.box:active {
 .content pre {
   -webkit-overflow-scrolling: touch;
   overflow-x: auto;
-  padding: 1.25em 1.5em;
   white-space: pre;
   word-wrap: normal; }
 
@@ -6742,8 +6741,8 @@ label.panel-block {
       padding: 18rem 1.5rem; } }
 
 .footer {
-  background-color: #073642;
-  padding: 3rem 1.5rem 4rem; }
+  background-color: #002B36;
+  padding: 2rem 2rem 2rem; }
 
 .section {
   background-color: #002B36; }
@@ -6927,7 +6926,8 @@ a {
   border-color: #073642; }
 
 .message-header {
-  font-weight: 700; }
+  font-weight:510;
+   }
 
 .message-body {
   border-width: 2px;

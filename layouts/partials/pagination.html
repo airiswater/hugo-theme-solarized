@@ -7,7 +7,7 @@
             {{ end }}
             <li
             {{ if not $pag.HasPrev }}class="disabled page-item"{{ end }}>
-            <a class="pagination-link is-current" href="{{ if $pag.HasPrev }}{{ $pag.Prev.URL }}{{ end }}" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+            <a class="pagination-link is-current" href="{{ if $pag.HasPrev }}{{ $pag.Prev.URL }}{{ end }}" aria-label="Previous"><i class="fas fa-arrow-left"></i></a>
             </li>
             {{ $.Scratch.Set "__paginator.ellipsed" false }}
             {{ range $pag.Pagers }}
@@ -30,7 +30,7 @@
             {{ end }}
             <li
             {{ if not $pag.HasNext }}class="disabled page-item"{{ end }}>
-            <a class="pagination-link is-current" href="{{ if $pag.HasNext }}{{ $pag.Next.URL }}{{ end }}" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+            <a class="pagination-link is-current" href="{{ if $pag.HasNext }}{{ $pag.Next.URL }}{{ end }}" aria-label="Next"><i class="fas fa-arrow-right"></i></a>
             </li>
             {{ with $pag.Last }}
             
