@@ -31,11 +31,11 @@ installation is same with any themes
 
 ## Go ofline!! Install service worker
 
-#### move gulpfile.js to root directory hugo
+#### 1. move gulpfile.js to root directory hugo
 
     mv ~/hugo-project/theme/hugo-solarized/gulpfile.js ~/hugo-project/gulpfile.js
 
-#### Install workbox and gulp
+#### 2. Install workbox and gulp
 make sure you have install npm, run this command in your hugo root directory
 
     $ npm init -y
@@ -44,7 +44,7 @@ make sure you have install npm, run this command in your hugo root directory
     $ npm install gulp-clean --save-dev
     $ npm install gulp-shell --save-dev
 
-#### Make manifest.json
+#### 3. Make manifest.json
 
 visit http://www.favicomatic.com/ and upload your image to became favicon, (recomend size 128x128,144x144,152x152,196x196,310x310)
 
@@ -92,7 +92,7 @@ make <code>maifest.json</code> on static folder
 
 make sure favicon name and path is same
 
-#### run build task
+#### 4. run build task
 
 open the vscode and <code><i>ctrl+shift+p</i> => <i>Task : Run task</i> => <i>gulp : build </i> => <i>continue without scanning the task output</i></code>
 
@@ -178,9 +178,9 @@ this is exapmle sw.js file on my project
 
     workbox.googleAnalytics.initialize({});
 
+install service worker is complete.
 
 please see the folder ExampleSite to get example configuration
-
 preview for this this theme ? https://linuxisekai.site
 
 ##### I hope You are happy and enojoy for my this work 😇
