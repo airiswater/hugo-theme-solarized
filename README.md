@@ -1,25 +1,24 @@
 ## Introduction
 
-hugo theme solarized based on bulma. <a href="https://linuxisekai.site">Demo</a>
+Hugo theme with Solarized color scheme, based on Bulma. <a href="https://linuxisekai.site">Demo</a>.
 
 
 <img src="/images/screenshoot.png">
 
 
-## feature
+## Features
 
 <ul>
-<li>bulma</li>
-<li>masonryJS</li>
-<li>Include with service worker</li>
-<li>Font awesome 5.9.0</li>
+<li>Bulma</li>
+<li>MasonryJS</li>
+<li>Include service worker</li>
+<li>Font Awesome 5.9.0</li>
 <li>HighlightJS</li>
 </ul>
 
-## Intallation
-i am sorry my english is very bad.
+## Installation
 
-installation is same with any themes
+Installation process is the same as other themes.
 
     $ git clone https://github.com/linuxisekai/hugo-theme-solarized.git
     $ cp -rf hugo-theme-solarized ~/hugo-project/themes
@@ -27,16 +26,17 @@ installation is same with any themes
 #### config.toml
 
     themesDir = "themes"
-    theme = "hugo-solarized"
+    theme = "hugo-theme-solarized"
 
-## Go ofline!! Install service worker
+## Go offline!! Install service worker
 
-#### 1. move gulpfile.js to root directory hugo
+#### 1. Move gulpfile.js to root directory of Hugo
 
     mv ~/hugo-project/theme/hugo-solarized/gulpfile.js ~/hugo-project/gulpfile.js
 
-#### 2. Install workbox and gulp
-make sure you have install npm, run this command in your hugo root directory
+#### 2. Install Workbox and gulp
+
+Make sure you have npm installed, then run this command in your Hugo root directory.
 
     $ npm init -y
     $ npm install gulp --save-dev
@@ -44,18 +44,18 @@ make sure you have install npm, run this command in your hugo root directory
     $ npm install gulp-clean --save-dev
     $ npm install gulp-shell --save-dev
 
-#### 3. Make manifest.json
+#### 3. Create manifest.json
 
-visit http://www.favicomatic.com/ and upload your image to became favicon, (recomend size 128x128,144x144,152x152,196x196,310x310)
+Visit http://www.favicomatic.com/ and upload your image to make it a favicon, (use one of recommended size: 128x128,144x144,152x152,196x196,310x310).
 
     $ cd ~/hugo-project/static
     $ mkdir image
     $ cd image
     $ mkdir icons
 
-put favicon to static/image/icons
+Put favicon to <code>static/image/icons</code>.
 
-make <code>maifest.json</code> on static folder
+Create <code>manifest.json</code> on static folder.
 
     {
     "name": "Hugo is cool.",
@@ -90,14 +90,15 @@ make <code>maifest.json</code> on static folder
     "start_url": "/"
     }
 
-make sure favicon name and path is same
+Make sure favicon's name and path is the same.
 
-#### 4. run build task
+#### 4. Run build task
 
-open the vscode and <code><i>ctrl+shift+p</i> => <i>Task : Run task</i> => <i>gulp : build </i> => <i>continue without scanning the task output</i></code>
+Open VSCode and <code><i>ctrl+shift+p</i> => <i>Task : Run task</i> => <i>gulp : build </i> => <i>continue without scanning the task output</i></code>
 
-this command will make sw.js file on <code>public</code> directory, so please check in your public directory.
-this is exapmle sw.js file on my project 
+This command will create <code>sw.js</code> file in <code>public</code> directory, so please check your <code>public</code> directory.
+
+This is an example of <code>sw.js</code> file on my project.
 
     /**
     * Welcome to your Workbox-powered service worker!
@@ -178,9 +179,10 @@ this is exapmle sw.js file on my project
 
     workbox.googleAnalytics.initialize({});
 
-install service worker is complete.
+Installation of service worker is now complete.
 
-please see the folder ExampleSite to get example configuration
-preview for this this theme ? https://linuxisekai.site
+Please see <code>ExampleSite</code> directory for examples of the configurations.
 
-##### I hope You are happy and enojoy for my this work 😇
+Preview for this this theme? https://linuxisekai.site
+
+##### I hope you are happy with this theme and enjoy my work 😇
