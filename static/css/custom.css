@@ -1,21 +1,19 @@
 /* end mobile screen */
 @media screen and (max-width:768px) {
     h1.header-judul{
-    margin-top: 1rem;
     font-size: 200%;
-    margin-left: 1rem;
-    margin-right: 1rem;
     text-align: center;
+    margin-top: 3rem;
     }
 .judul {
-    margin-top: 6rem;
+    margin-top: 3rem;
     font-size: 180%;
     margin-left: 1rem;
     margin-right: 1rem;
     text-align: center;
 }
 h1 {
-    padding-top: 4rem;
+    padding-top: 2.5rem;
     padding-bottom: 0rem;
 }
 .content h3{
@@ -24,16 +22,17 @@ h1 {
 }
 .info-post {
   margin-bottom: 3rem;
-  border-bottom: 0.2rem solid ;
-  padding-bottom: 0.5rem;
+  border-top: 0.1rem solid ;
+  border-bottom: 0.1rem solid ;
+  padding-bottom: 0.3rem;
   text-align: center;
-  margin-left:-0.1em;
-  margin-right: -0.1rem;
+  
+  font-size: 0.9em;
+  
 }
 .content {
-    margin-top: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    padding:1rem;
+    font-size: 0.9rem;
 }
 .button-post {
     padding: 2rem;
@@ -88,7 +87,8 @@ h1 {
 }
 .info-post {
     margin-bottom: 3rem;
-    border-bottom: 0.2rem solid ;
+    border-top: 1px solid ;
+    border-bottom: 1px solid ;
     padding-bottom: 0.5rem;
     text-align: center;
     margin-left: -2rem;
@@ -96,8 +96,8 @@ h1 {
 }
 .content {
     margin-top: 1rem;
-    margin-left: 7rem;
-    margin-right: 7rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 h1 {
@@ -160,9 +160,11 @@ height: 320px;
     }
     .info-post {
         margin-bottom: 3rem;
-        border-bottom: 0.2rem solid ;
-        padding-bottom: 0.5rem;
+        border-top: 1px solid ;
+        border-bottom: 1px solid ;
+        padding: 0.3rem;
         text-align: center;
+        font-size: 0.9em;
         margin-left: -2rem;
         margin-right: -2rem;
     }
@@ -205,9 +207,12 @@ height: 320px;
 
 .info-header {
   margin-bottom: 3rem;
-  border-bottom: 0.2rem solid ;
+  border-top: 0.15rem solid ;
+  border-bottom: 0.15rem solid ;
   padding-bottom: 0.5rem;
   text-align: center;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .disqus-comment{
@@ -335,12 +340,6 @@ html {scroll-behavior:smooth;} */
 }
 /* box masonry style */
 
-  .masonry-wrapper {
-    padding: 1em;
-    max-width: 1024px;
-    margin-right: auto;
-    margin-left: auto;
-  }
   .masonry {
     columns: 1;
     column-gap: 20px;
@@ -350,13 +349,32 @@ html {scroll-behavior:smooth;} */
     vertical-align: top;
     margin-bottom: 20px;
   }
+  @media screen and (max-width:768px) {
+    .masonry-wrapper {
+      margin:1.5rem;
+      padding: 0.5rem;
+    }
+  }
+
   @media only screen and (max-width: 1023px) and (min-width: 768px) {  .masonry {
       columns: 3;
-    }
+  }
+      .masonry-wrapper {
+        padding: 1em;
+        max-width: 1024px;
+        margin-right: auto;
+        margin-left: auto;
+      }
   }
   @media only screen and (min-width: 1024px) {
     .masonry {
       columns: 3;
+    }
+    .masonry-wrapper {
+      padding: 1em;
+      max-width: 1024px;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
   .masonry-item, .masonry-content {

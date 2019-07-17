@@ -1,5 +1,5 @@
-<div class="container" style="font-family: 'Noto Serif', sans-serif;">
-    <div class="masonry-wrapper">
+<div class="container">
+  <div class="masonry-wrapper">
       <div class="masonry">
           {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 9 }}
           {{ range $paginator.Pages }} 

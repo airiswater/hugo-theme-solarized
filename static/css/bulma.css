@@ -1,7 +1,7 @@
 /*! bulmaswatch v0.7.2 | MIT License */
 /*! bulma.io v0.7.2 | MIT License | github.com/jgthms/bulma */
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif|Ubuntu+Mono&display=swao');
+@import url('https://fonts.googleapis.com/css?family=Noto Serif|Ubuntu+Mono&display=swao');
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -4028,7 +4028,7 @@ a.list-item {
 
 .navbar {
   background-color: #073642;
-  min-height: 3.25rem;
+  min-height: 3.5rem;
   position: relative;
   z-index: 30; }
   .navbar.is-white {
@@ -4437,7 +4437,7 @@ a.list-item {
     min-height: 3.25rem;
     width: 100%; }
   .navbar.has-shadow {
-    box-shadow: 0 2px 0 0 #073642; }
+    box-shadow: 0 2px 0px 0px #839496; }
   .navbar.is-fixed-bottom, .navbar.is-fixed-top {
     left: 0;
     position: fixed;
@@ -4478,9 +4478,9 @@ body.has-navbar-fixed-bottom {
   color: #839496;
   cursor: pointer;
   display: block;
-  height: 3.25rem;
+  height: 3.5rem;
   position: relative;
-  width: 3.25rem;
+  width: 3.5rem;
   margin-left: auto; }
   .navbar-burger span {
     background-color: currentColor;
@@ -4637,7 +4637,7 @@ a.navbar-item,
         align-items: center; }
       .navbar.is-spaced a.navbar-item,
       .navbar.is-spaced .navbar-link {
-        border-radius: 0.4em; }
+        border-radius: 0em; }
     .navbar.is-transparent a.navbar-item:hover, .navbar.is-transparent a.navbar-item.is-active,
     .navbar.is-transparent .navbar-link:hover,
     .navbar.is-transparent .navbar-link.is-active {
@@ -4664,7 +4664,7 @@ a.navbar-item,
       transform: rotate(135deg) translate(0.25em, -0.25em); }
     .navbar-item.has-dropdown-up .navbar-dropdown {
       border-bottom: 1px solid #002B36;
-      border-radius: 8px 8px 0 0;
+  
       border-top: none;
       bottom: 100%;
       box-shadow: 0 -8px 8px rgba(10, 10, 10, 0.1);
@@ -4738,7 +4738,7 @@ a.navbar-item,
   .navbar.is-fixed-bottom-desktop {
     bottom: 0; }
     .navbar.is-fixed-bottom-desktop.has-shadow {
-      box-shadow: 0 -2px 3px rgba(10, 10, 10, 0.1); }
+      box-shadow: 1px 2px 3px rgb(255, 255, 255); }
   .navbar.is-fixed-top-desktop {
     top: 0; }
   html.has-navbar-fixed-top-desktop,
@@ -6934,7 +6934,9 @@ a {
   border-color: #839496; }
 
 .navbar {
-  border-radius: 0.4em; }
+  border-bottom:0.5em;
+  border-color: white;  
+}
   .navbar.is-transparent {
     background-color: transparent; }
   @media screen and (max-width: 1087px) {
