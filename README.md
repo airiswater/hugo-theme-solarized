@@ -46,7 +46,7 @@ Make sure you have npm installed, then run this command in your Hugo root direct
 
 #### 3. Create manifest.json
 
-Visit http://www.favicomatic.com/ and upload your image to make it a favicon, (use one of recommended size: 128x128,144x144,152x152,196x196,310x310).
+Visit http://www.favicomatic.com/ and upload your image to make it a favicon, (I recommend that you create these sizes: 128x128,144x144,152x152,196x196,310x310).
 
     $ cd ~/hugo-project/static
     $ mkdir image
