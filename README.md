@@ -92,9 +92,21 @@ Make sure favicon's name and path is the same.
 
 #### 4. Run build task
 
+##### With VSCode
+
 Open VSCode and <code><i>ctrl+shift+p</i> => <i>Task : Run task</i> => <i>gulp : build </i> => <i>continue without scanning the task output</i></code>
 
-This command will create <code>sw.js</code> file in <code>public</code> directory, so please check your <code>public</code> directory.
+##### From CLI
+
+You need to install <code>gulp-cli</code> package globally first.
+
+    $ npm install --global gulp-cli
+
+And then run the build task.
+
+    $ gulp build
+
+This will create <code>sw.js</code> file in <code>public</code> directory, so please check your <code>public</code> directory.
 
 This is an example of <code>sw.js</code> file on my project.
 
